@@ -1,134 +1,188 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <title>My Web Site</title>
+    <meta name="description" content="Life is Tech!のUnityメンター、べにーの自己紹介サイトです">
+    <meta property="og:image" content="hero.jpg" />
+    <meta property="og:title" content="べにーの部屋" />
+    <meta property="og:type" content="website" />
     <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="jquery.bgswitcher.js"></script>
 </head>
+
 <body>
- <div id="header">
-     <div class="container">
-         
-<header>
-    <img src="index.png" alt="where">
-    <h1 class="name">Benny</h1>
-</header>
+    <div id="header">
+        <div class="container">
 
-  <nav>
-    <ul>
-      <li><a href="#me">About me</a></li>
-      <li><a href="#content1">Likes</a></li>
-      <li><a href="#content2">favorite</a></li>
-      <li><a href="#sidebar2">Link</a></li>
-    </ul>
-  </nav>
+            <header class="main-v">
+                <img src="index.png" alt="where">
+                <h1 class="name">Benny</h1>
+            </header>
 
-  <section class="me" id="me" >
-    <h2 class="title">About me</h2>
-    <p>
-      <img src="me-new2.jpg" width="200">
-      <br>
-      11期Unityの「べにー」こと<b>屋代 美紅</b>です！<br>
-      べにーという名前は、下の名前にある<br>
-      「紅」という漢字から取りました。<br>
-     一昨日、二十歳を迎えた大学二年生。<br>
-     大学では経済学を学んでいます！<br>
-     食べることも眠ることも大好きです。<br>
-     
-    </p>
-  </section>
-         
-     </div>
- </div>
-     
-  <div class= "container">
-  
-  <div class="content" id="content2">
-    <h2 class="title">好きなもの</h2>
-        <div class="left-box">
-    <div class="box">
-    <div class="small">
-     <img src="sprited.jpg">
-      <h3>千と千尋の神隠し</h3>
+            <nav>
+                <ul>
+                    <li><a href="#me"><span class="edge edge1"></span>About me</a></li>
+                    <li><a href="#content1"><span class="edge edge2"></span>Likes</a></li>
+                    <li><a href="#content2"><span class="edge edge3"></span>favorite</a></li>
+                    <li><a href="#sidebar2"><span class="edge edge4"></span>Link</a></li>
+                </ul>
+            </nav>
+
+            <section class="me" id="me">
+                <h2 class="title">About me</h2>
+                <img src="me-new2.jpg" width="200">
+                <p>
+
+                    <br>
+                    11期Unityの「べにー」こと<b>屋代 美紅</b>です！<br>
+                    べにーという名前は、下の名前にある<br>
+                    「紅」という漢字から取りました。<br>
+                    一昨日、二十歳を迎えた大学二年生。<br>
+                    大学では経済学を学んでいます！<br>
+                    食べることも眠ることも大好きです。<br>
+
+                </p>
+            </section>
+
+        </div>
     </div>
-      <div class="small">
-        <img src="inko.jpg">
-        <h3>インコ</h3>
-      </div>
-      <div class="small">
-        <img src="manga.jpg">
-        <h3>漫画</h3>
-      </div>
-      </div>
-                
+
+    <div class="container">
+
+        <div class="content" id="content2">
+            <h2 class="title">Likes</h2>
+            <div class="left-box">
+                <div class="box">
+                    <div class="animation1">
+                        <div class="small">
+                            <img src="sprited.jpg">
+                            <h3>千と千尋の神隠し</h3>
+                        </div>
+                        <div class="caption">
+                            <h3>2019/6/21 中国にてロードショー</h3>
+                            <h3>千と千尋の神隠し</h3>
+                        </div>
+                    </div>
+                    <div class="animation1">
+                        <div class="small">
+
+                            <img src="inko.jpg">
+                            <h3>インコ</h3>
+                        </div>
+                        <div class="caption">
+                            <h3>べにー家インコのソラ</h3>
+                            <h3>セキセイインコのオスです</h3>
+                        </div>
+                    </div>
+                    <div class="animation1">
+                        <div class="small">
+
+                            <img src="manga.jpg">
+                            <h3>漫画</h3>
+                        </div>
+                        <div class="caption">
+                            <h3>大奥</h3>
+                            <h3>よしながふみ</h3>
+                            <h3>男女逆転大奥の物語</h3>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-        
-</div>
-  <div id =main>
-   <div class="content" id="content1">
-    <h2 class="title">好きなこと</h2>
-    <div class="box">
-      <div class="big">
-        <img src="light.jpg">
-        <h3>演劇・照明</h3>
-      </div>
-      <div class="big">
-      <img src="e.jpg">
-      <h3>お絵描き</h3>
+        <div id=main>
+            <div class="content" id="content1">
+                <h2 class="title">Favorite</h2>
+                <div class="box">
+                    <div class="big">
+                        <img src="light.jpg">
+                        <h3>照明</h3>
+                    </div>
+                    <div class="big">
+                        <img src="e.jpg">
+                        <h3>お絵描き</h3>
+                    </div>
+                    <div class="big">
+                        <img src="cook.jpg">
+                        <h3>料理</h3>
+                    </div>
+                    <div class="big">
+                        <img src="trip.jpg">
+                        <h3>旅行</h3>
+                    </div>
+                    <div class="big">
+                        <img src="taiko.jpg">
+                        <h3>和太鼓</h3>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
     </div>
-      <div class="big">
-        <img src="cook.jpg">
-        <h3>料理</h3>
-      </div>
-      <div class="big">
-        <img src="taiko.jpg">
-        <h3>和太鼓</h3>
-      </div>
-      <div class="big">
-        <img src="trip.jpg">
-        <h3>旅行</h3>
-      </div>
+
+
+
+    <div class="slidebar" id="slidebar2">
+        <h2 class="title">Cooking</h2>
+        <img src="insta.png" alt="muri" 　width="270">
+        <p class="cook">作ったご飯をInstagramにUPしています。</p>
+        <a class="btn" href="https://www.instagram.com/eatmogmogeveryday/?igshid=1mf1hkqes2dtp">
+            Instagram
+
+        </a>
+        <img src="nametag.jpg" alt="">
     </div>
-</div>
-    
- 
-    
+    <div class="slidebar" id="slidebar1">
+        <h2 class="title">More</h2>
+        <div class="about">
+            <h3>舞台照明とは...</h3>
+            <p><br>演劇に照明は欠かせない！<br>
 
-
-
- 
-
-
-</div>    
-       
-</div> 
-      
-       
-        <div class="slidebar" id="slidebar1">
-          <h2 class="title">もっと！</h2>
-           <h3>照明って...?</h3>
-            <p>演劇に照明は欠かせない！<br>
-            同じ舞台でも全く違うシーンを表現できます!</p>
-            <img src="hutulight.jpg" alt="muri"　width="270">
-            
-            <img src="emolight.jpg" alt="muri"　width="270">
-        
-            <img src="akulight.jpg" alt="muri"　width="270">
-        
-            
+                同じ舞台でも全く違うシーンを表現できます<br>
+                様々なシーンで役者を美しく魅せます</p>
         </div>
-         <div class="slidebar" id="slidebar2">
-           <h3>料理</h3>
-            <img src="insta.png" alt="muri"　width="270">
-            <p>作ったご飯をInstagramにUPしています。</p>
-            <a class="btn" href="https://www.instagram.com/eatmogmogeveryday/?igshid=1mf1hkqes2dtp">Instagram</a>
-        </div>
-        <div class="slidebar" id="slidebar2">
-           <h3>インスタアカウントはこちら</h3>
-            <img src="nametag.jpg" alt="">
-        </div>
-         <a href="#header" id="back">TOP</a>
+        <img src="hutulight.jpg" alt="muri" 　width="270">
+
+        <img src="emolight.jpg" alt="muri" 　width="270">
+
+        <img src="akulight.jpg" alt="muri" 　width="270">
+
+
+    </div>
+
+    <a href="#header" id="back">△TOP</a>
+
+
+    <script>
+        jQuery(function($) {
+            $('.main-v').bgSwitcher({
+                images: ["trip.jpg", "taiko.jpg", "emolight.jpg"],
+                interval: 3000,
+                loop: true,
+                shuffle: true,
+                effect: "slide", // fade,blind,clip,slide,drop,hide
+                duration: 500,
+                easing: "swing" // linear,swing
+            });
+        });
+
+    </script>
 </body>
 
 <footer>&copy; Benny miku.y</footer>

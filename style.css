@@ -4,7 +4,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Modak',cursive;
+    font-family: cursive;
 }
 
 body {
@@ -13,18 +13,23 @@ body {
     font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
 }
 
-header {
+.main-v {
     background-image: url(hero.jpg);
-    background-size: contain;
+    background-size: cover;
     /*background-repeat: repeat;*/
-    height: 600px;
-    padding: 30px;
+    width: 1440px;
+    height: 900px;
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 200px;
     margin-bottom: 0px;
 }
 
-.name {
-    margin-top: 300px;
-    margin-left: 200px;
+#header h1 {
+    color: #f9f9f9;
+    float: right;
+    margin-top: 600px;
+    margin-right: 50px;
 }
 
 header img {
@@ -42,41 +47,46 @@ header h1 {
 
     /*margin-left: 430px;*/
     margin-top: 0px;
-   
+
     padding-top: 40px;
     background-repeat: no-repeat;
     background-position: top center;
 }
 
+
+.name {
+    margin-top: 300px;
+    margin-left: 0px;
+}
+
+
+
 .me {
     background-color: #ffffdd;
     color: #663300;
     padding: 30px;
-    margin-top: 16px;
+    margin: 20px;
+
 }
 
 .me p {
     font-size: 20px;
     background-color: #ffffdd;
-    padding: 20px;
-    height: 260px;
-    border-radius: 20px;
-    border: solid 5px #e8eef0;
+
+    height: 100%;
+    text-align: center;
     color: #663300;
 }
 
 .me img {
-    float: right;
-    margin: auto;
+
+    margin: 0px 485px 30px;
     height: 255px;
     width: 400px;
 }
 
 .content {
-    margin: 20px;
     padding: 30px;
-
-
 }
 
 h3 {
@@ -93,15 +103,17 @@ h3 {
 }
 
 #content2 .box {
-    border: solid 5px #e8eef0;
-    border-radius: 20px;
+
     width: 910px;
+    margin-left: 200px;
 }
 
 #content2 {
-    background-color: #ffd7d7;
+    background-color: #ffffdd;
     margin-top: 16px;
-    width: 928px;
+    width: 1340px;
+    margin: 20px;
+
 }
 
 #content2 h1 {
@@ -110,20 +122,21 @@ h3 {
 
 .big {
     background-image: url(pink.jpg);
-    background-color: #ffd7d7;
-    width: 500px;
+    background-color: #ffffdd;
+    width: 350px;
+    height: 250px;
     padding: 15px;
     margin: 20px;
     /*box-shadow: -10px -10px 10px #ffffff;*/
     float: left;
-    transform: rotate(-5deg);
+
 }
 
 .small {
     background-image: url(kiiro.jpg);
     background-color: #ffffdd;
-    height: 380px;
-    width: 260px;
+    height: 400px;
+    width: 250px;
     padding: 10px;
     margin: 10px;
     /*box-shadow: -10px -10px 10px #ffffff;*/
@@ -131,8 +144,13 @@ h3 {
     display: block;
 }
 
+.small img {
+    padding: 10px auto 20px;
+}
+
 .box {
     float: left;
+    margin: 0px auto 20px;
 }
 
 
@@ -147,33 +165,31 @@ h2 {
     color: aquamarine;
     font-size: 20px;
     padding: 10px 10px;
-
-
 }
+
 
 #back {
     text-decoration: none;
-    border: 3px double aquamarine;
     padding: 8px 10px;
-    margin: 30px;
-    margin-bottom: 360px;
-    margin-left: 880px;
+    margin-right: 10px;
+
+    float: right;
     background: pink;
     color: white;
     border-radius: 5px;
 }
 
 .title {
-    font-size: 30px;
-    border-left-style: solid;
+    font-size: 50px;
+    /*border-left-style: solid;*/
     border-left-color: #fc7cca;
-    border-bottom-style: solid;
+    border-bottom-style: dotted;
     border-bottom-color: #fc7cca;
     color: #fc7cca;
 
     border-left-width: 10px;
     padding-left: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .title2 {
@@ -212,11 +228,16 @@ h2 {
     border: solid 2px #ffd7d7;
     letter-spacing: 3px;
     padding: 10px 30px;
-    margin-left: 10px;
+    margin: 16px;
     position: relative;
 
     overflow: hidden;
     display: inline-block;
+}
+
+.btn:hover {
+    background-color: pink;
+    color: white;
 }
 
 #main .btn:active {
@@ -224,9 +245,7 @@ h2 {
     color: #fff;
 }
 
-.btn:hover {
-    border: solid 3px #pink;
-}
+
 
 .btn .edge {
     display: block;
@@ -254,7 +273,7 @@ h2 {
     transition-delay: 0.3s;
 }
 
-.btn .edge2 {
+.edge2 {
     height: 1px;
 
     -webkit-transform: translate3d(100%, 0, 0);
@@ -298,19 +317,31 @@ h2 {
 
 img {
     float: left;
-    width: 350px;
+
 }
 
 p {
-    margin-bottom: 10px;
+    margin: 0px;
 
+}
+
+.cook {
+    margin-top: 60px;
+    margin-left: 330px;
+}
+
+.big h3 {
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-r;
+    writing-mode: vertical-r;
+    font-size: 22px;
 }
 
 .content {
     border-bottom: :1px #eee;
-    padding: 16px;
-    width: 800px;
-    margin: 0 auto;
+    padding-top: 16px;
+    width: 1380px;
+    margin: 0;
     overflow: hidden;
 
 }
@@ -321,11 +352,14 @@ p {
 
 #content1 {
     background-color: #ffffdd;
-    width: 100%;
+    width: 1340px;
+    margin: 0 20px;
 }
 
 #content1 img {
     margin: 13px;
+    height: 225px;
+    width: 280px;
 }
 
 #content4 h1 {
@@ -354,17 +388,17 @@ p {
 }
 
 #main {
-    width: 608px;
+    width: 1440px;
     margin: 0 auto;
     overflow: hidden;
     background: #fff;
-    margin-top: 16px;
+
     float: left;
 
 }
 
 .container {
-    width: 960px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -376,19 +410,12 @@ p {
     position: fixed;
     z-index: 2;
 }*/
-#header h1 {
-    color: #f9f9f9;
-    float: left;
-    margin-right: 30px;
-
-
-}
 
 nav {
     background-color: #fc7cca;
     margin-top: 16px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 
 nav a {
@@ -396,24 +423,113 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
+/*nav a:hover {
     color: #ffd7d7;
+}*/
+nav a .edge {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: none repeat scroll 0 0 #ffffff;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
+
+nav a .edge1 {
+    height: 2px;
+
+    top: 40px;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    -o-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+nav:hover a .edge1 {
+
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+nav a .edge2 {
+    height: 2px;
+
+    top: 40px;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    -o-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+nav:hover a .edge2 {
+
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+nav a .edge3 {
+    height: 2px;
+
+    top: 40px;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    -o-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+nav:hover a .edge3 {
+
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+nav a .edge4 {
+    height: 2px;
+
+    top: 40px;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    -o-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+nav:hover a .edge4 {
+
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
 
 nav ul {
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
+    font-size: 32px;
 }
 
 nav li {
     display: inline-block;
     margin-right: 40px;
+    color: #ffd7d7;
+    text-decoration: none;
+    position: relative;
 }
 
 .slidebar {
     float: left;
-    width: 280px;
+    width: 650px;
     margin: 20px;
     background: #fff;
     padding: 15px;
@@ -422,19 +538,29 @@ nav li {
 }
 
 #slidebar1 {
-    overflow: hidden;
+
+
     background-color: #ffffdd;
+}
+
+#slidebar1 .about {
+    float: left;
+    overflow: hidden;
+    padding: 15px;
+    margin: 20px;
 }
 
 #slidebar2 {
-    overflow: hidden;
+    float: left;
     background-color: #ffffdd;
+    margin-right: 0;
+    width: 670px;
 }
 
 .slidebar img {
-    margin-bottom: 16px;
+
     width: 280px;
-    ;
+    padding: 16px;
 }
 
 .slidebar h1 {
@@ -466,11 +592,45 @@ p.new {
 
 }
 
+.animation1 {
+    position: relative;
+    width: 300px;
+    float: left;
+}
+
+#content2 .animation1 .caption {
+    position: absolute;
+    margin: 14px;
+    padding: 20px;
+    background-color: #ffff4480;
+    height: 370px;
+    width: 230px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+#content2 .animation .caption h3 {
+    text-align: center;
+    color: black;
+}
+
+#content2 .animation1:hover .caption {
+    -webkit-transform: translate(8px, 8px);
+    -ms-transform: translate(8px, 8px);
+    -o-transform: translate(8px, 8px);
+    transform: translate(8px, 8px);
+    opacity: 1;
+}
+
 footer {
     text-align: center;
     color: #e8eef0;
     background: #fc7cca;
     width: 100%;
+    height: 30px;
+    margin-top: 1600px;
 }
 
 p span {
